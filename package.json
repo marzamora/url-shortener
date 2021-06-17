@@ -1,0 +1,28 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "0.0.1",
+  "description": "freeCodeCamp Challenge #2 for APIs and Microservices Certification",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.12.14"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "freecodecamp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marzamora/request-header-parser-microservice.git"
+  },
+  "author": "Marcello Zamora",
+  "license": "MIT"
+}
