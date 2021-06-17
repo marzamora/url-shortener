@@ -6,4 +6,4 @@ npm install
 npm start
 ```
 
-![Preview](https://imgur.com/a/TTAmVek)
+![Preview](https://imgur.com/3DarqOI.png)
