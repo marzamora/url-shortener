@@ -27,7 +27,7 @@ const shorten = {
                 data = {
                     error: 'invalid url'
                 }
-                next(null, data)
+                return next(null, data)
             }    
             data = {
                 original_url: req.body.url

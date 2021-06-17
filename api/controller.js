@@ -10,9 +10,16 @@ const controllers = {
     },
     redirect: (req, res) => {
         shorten.retrieve(req, res, (err, url) => {
-            if (err) 
+            if (err) {
                 console.error(err)
-            res.redirect(url.original_url)
+                res.send({error: 'internal_error'})
+            } else {
+                if (url == null) {
+                    res.json({error: 'short url does not exist'})
+                } else {
+                    res.redirect(url.original_url)
+                }
+            }
         })
     },
     default: (req, res) => {
