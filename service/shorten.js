@@ -20,7 +20,10 @@ const shorten = {
     create: (req, res, next) => {
         let data = {}
         let url = req.body.url
+        // remove protocol
         url = url.replace(/(^\w+):\/\//, '')
+        // remove subdomains
+        url = url.replace(/\/.*/, '')
         dns.lookup(url, (err, address, family) => {
             if (err) {
                 console.error(err)
